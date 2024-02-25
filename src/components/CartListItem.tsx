@@ -7,7 +7,7 @@ import { Link } from 'expo-router';
 import { FontAwesome } from '@expo/vector-icons';
 import { useCart } from '../providers/CartProvider';
 
-import { defaultPizzaImage } from './ProdcutListItem';
+import { defaultPizzaImage } from './ProductListItem';
 
 type CartListItemProps = {
   cartItem: CartItem;

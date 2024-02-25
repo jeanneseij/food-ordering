@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet, TextInput, Image, Alert } from 'react-native'
 import React, { useState } from 'react'
 import Button from '@/components/Button'
-import { defaultPizzaImage } from '@/components/ProdcutListItem'
+import { defaultPizzaImage } from '@/components/ProductListItem'
 import Colors from '@/constants/Colors'
 import * as ImagePicker from 'expo-image-picker'
 import { Stack, useLocalSearchParams } from 'expo-router'
