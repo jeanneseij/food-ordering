@@ -49,7 +49,9 @@ const CartProvider  = ({ children }: PropsWithChildren) => {
         )
     }
 
-    const total = items.reduce((sum, item) => (sum += item.product.price * item.quantity), 0)
+    const sum = items.reduce((sum, item) => (sum += item.product.price * item.quantity), 0)
+    const total = Math.ceil(sum * 100) / 100;
+    total.toFixed(2)
 
     return (
         <CartContext.Provider value={{ items, addItem, updateQuantity, total }}>
